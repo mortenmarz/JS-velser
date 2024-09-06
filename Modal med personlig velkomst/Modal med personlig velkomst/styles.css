@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image:url("images/one-step-checkout2.png");
+    background-size: cover;
+}
+
+div{
+    /* Ydre stil:*/
+    width:80%;
+    min-height:500px;
+    border:1px solid grey;
+    border-radius:10px;
+
+    /* Indre stil: */
+    text-align:center;
+    background-color:white;
+
+    /* Animation: */
+    animation-name:dukOp;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+}
+
+div h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform:uppercase;
+}
+
+div p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes dukOp{
+    from{transform:scale(0)}
+    to{transform:scale(1)}
+}
