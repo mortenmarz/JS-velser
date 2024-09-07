@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Kontaktformular</title>
+</head>
+<body>
+    <form id="kontaktform">
+        <label for="navn">Navn:</label><br>
+        <input type="text" id="navn" placeholder="Skriv dit navn" value=""><br>
+        
+        <label for="besked">Besked:</label><br>
+        <textarea id="besked" placeholder="Skriv din besked" rows="4"></textarea><br>
+       
+        <input type="button" id="sendKnap" value="Send besked"> 
+    </form>
+
+    <div id="output">Din besked vil blive vist her.</div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Bekræft din besked</h2>
+            <p id="modalBesked"></p>
+            <button id="sendEndeligt">Send besked</button>
+            <button id="lukModal">Luk</button>
+        </div>
+    </div>
+</body>
+</html>
