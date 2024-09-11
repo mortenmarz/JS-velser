@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Forms - The Big Announcement</title>
+</head>
+<body>
+    <form>
+        <label for="besked">Besked</label><br>
+        <input type="text" id="besked" name="besked" value=""><br>
+        <input type="button" id="send" value="Vis besked" >
+
+        <!-- Man kan bruge denne:
+        <input type="submit" value="Submit"> 
+        ... men den reloader siden og sletter alt i formularen.
+        Læs om 'preventDefault' for at undgå det, hvis I en dag vil bruge submit.
+        -->
+    
+    </form> 
+
+    <div id="p_output">...</div>
+
+</body>
+</html>

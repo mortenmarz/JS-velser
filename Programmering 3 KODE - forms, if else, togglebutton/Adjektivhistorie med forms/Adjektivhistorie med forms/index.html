@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <title>Adjektivhistorie med forms</title>
+</head>
+<body>
+    <form>
+        <!-- Inputfelt til navn: -->
+        <label for="navn">Navn:</label><br>
+        <input type="text" id="navn"><br>
+
+        <!-- Inputfelt til adjektiv: -->
+        <label for="adjektiv">Adjektiv:</label><br>
+        <input type="text" id="adjektiv"><br>
+
+        <!--Knap:-->
+        <input type="button" id="knap" value="Vis historie">
+
+    </form>
+
+    <!-- Her vises historien med innerHTML i JS: -->
+    <p id="output"></p>
+</body>
+</html>

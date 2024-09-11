@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex; /* Så de to div'er står ved siden af hinanden */
+    overflow:hidden; /* Skjuler overflow, så vi undgår horisontal scrollbar*/
+}
+
+/* Logo: */
+img{
+    position:fixed;
+    width:20%;
+    z-index:1;
+    left:50%;
+    margin-left:-10%;
+    
+    top:200px;
+}
+
+/* Fælles for input og knap: */
+#input_pass, #btn_enter{
+    position:fixed;
+    z-index:1;
+    /* Til centrering når man bruger position fixed og absolute: */
+    left:50%;
+}
+
+/* Inputfelt til password: */
+#input_pass{
+    width:200px;
+    margin-left:-100px;
+
+    top:310px;
+}
+
+/* 'Enter' knap: */
+#btn_enter{
+    /* Til teksten i linket: */
+    font-family:'Courier New', Courier, monospace;
+    text-align:center;
+    text-decoration:none;
+    color:black;
+
+    transition:all 1s;
+    
+    /* Position: */
+    width:300px;
+    margin-left:-150px;
+    left:50%;
+    top:400px;
+}
+
+#btn_enter:hover{
+    transform:scale(1.5);
+}
+
+#venstreport, #hoejreport{
+    width:50%;
+    height:3000px;
+    background-color:grey;
+
+    /* Animation: */
+    position:relative; /* Så jeg lige kan 'skubbe' til div'erne. */
+
+    /* Generelt for begge div'er - det specifikke får de om lidt: */
+    animation-duration:5s; 
+    animation-fill-mode: forwards;
+}
+
+/* Tilfoej denne animation til venstreport i JS*/
+@keyframes udTilVenstre{
+    from{right:0px}
+    to{right:1000px}
+}
+
+/* Tilfoej denne animation til hoejreport i JS*/
+@keyframes udTilHoejre{
+    from{left:0px}
+    to{left:1000px}
+}

@@ -1,0 +1,19 @@
+body{
+    display:flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form, #p_output{
+    border:1px solid black;
+    text-align:center;
+}
+
+form{
+    width:40%;
+    height:300px;
+}
+
+#p_output{
+    width:60%;
+    font-size:32px;
+}
